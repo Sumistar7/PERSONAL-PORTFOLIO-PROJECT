@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surma Tersoo</title>
+  <meta name="description" content="Surma Tersoo — Software Engineering student at Veritas University, Abuja." />
+
+  <!-- Clean System & Editorial Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            // Strict Duotone Palette (Pure Ink & Paper)
+            paper: {
+              light: '#fbfbfa',
+              dark: '#111111',
+            },
+            ink: {
+              light: '#141414',
+              dark: '#ececec',
+            },
+            muted: {
+              light: '#6e6e6e',
+              dark: '#8e8e8e',
+            },
+            line: {
+              light: '#e8e8e6',
+              dark: '#242424',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-paper-light text-ink-light dark:bg-paper-dark dark:text-ink-dark font-sans text-[15px] leading-relaxed antialiased transition-colors duration-150">
+
+  <div class="max-w-2xl mx-auto px-6 py-16 sm:py-24">
+    
+    <!-- Top Header -->
+    <header class="flex items-baseline justify-between mb-16 pb-6 border-b border-line-light dark:border-line-dark">
+      <div>
+        <h1 class="text-xl font-medium tracking-tight text-ink-light dark:text-ink-dark">Surma Tersoo</h1>
+        <p class="text-sm text-muted-light dark:text-muted-dark mt-0.5">Software Engineering Student</p>
+      </div>
+
+      <!-- Duotone Theme Switcher -->
+      <button id="themeToggle" class="text-xs font-mono text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark transition-colors py-1 px-2 border border-line-light dark:border-line-dark rounded">
+        <span class="dark:hidden">Dark mode</span>
+        <span class="hidden dark:inline">Light mode</span>
+      </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="space-y-16">
+
+      <!-- About Section -->
+      <section class="space-y-4">
+        <p class="text-ink-light dark:text-ink-dark leading-relaxed">
+          I am an undergraduate software engineering student at <span class="font-medium">Veritas University</span> in Bwari, Abuja.
+        </p>
+        <p class="text-muted-light dark:text-muted-dark leading-relaxed">
+          I spend most of my time writing code, studying core computer science concepts, and building practical web tools. Currently interested in backend systems, database design, and algorithmic problem-solving.
+        </p>
+        <p class="text-sm font-mono text-muted-light dark:text-muted-dark pt-1">
+          Based in Abuja, Nigeria · Available for internships & collaborative projects
+        </p>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="space-y-6">
+        <div class="flex items-baseline justify-between border-b border-line-light dark:border-line-dark pb-2">
+          <h2 class="text-xs uppercase tracking-wider font-mono text-muted-light dark:text-muted-dark">Selected Projects</h2>
+          <span class="text-xs font-mono text-muted-light dark:text-muted-dark">2024 — Present</span>
+        </div>
+
+        <div class="space-y-8">
+          
+          <!-- Project 1 -->
+          <article class="space-y-2">
+            <div class="flex items-baseline justify-between gap-4">
+              <h3 class="font-medium text-ink-light dark:text-ink-dark">
+                Campus Room Allocator
+              </h3>
+              <div class="flex items-center gap-3 text-xs font-mono">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark underline underline-offset-4">source</a>
+              </div>
+            </div>
+            <p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed">
+              A prototype system built to digitize hostel room requests and approvals for Veritas University students, replacing manual paper clearance workflows with transactional database tracking.
+            </p>
+            <p class="text-xs font-mono text-muted-light dark:text-muted-dark">
+              React · Node.js · Express · PostgreSQL
+            </p>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="space-y-2">
+            <div class="flex items-baseline justify-between gap-4">
+              <h3 class="font-medium text-ink-light dark:text-ink-dark">
+                SwiftSpend
+              </h3>
+              <div class="flex items-center gap-3 text-xs font-mono">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark underline underline-offset-4">source</a>
+              </div>
+            </div>
+            <p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed">
+              A lightweight expense tracker built for university students to log weekly allowances, categorize recurring campus spending (food, books, transport), and view simple breakdown charts.
+            </p>
+            <p class="text-xs font-mono text-muted-light dark:text-muted-dark">
+              JavaScript (ES6+) · Chart.js · LocalStorage
+            </p>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="space-y-2">
+            <div class="flex items-baseline justify-between gap-4">
+              <h3 class="font-medium text-ink-light dark:text-ink-dark">
+                Nexus Study Hub
+              </h3>
+              <div class="flex items-center gap-3 text-xs font-mono">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark underline underline-offset-4">source</a>
+              </div>
+            </div>
+            <p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed">
+              A minimal repository web app where engineering students can upload, search, and organize past exam papers and syllabus summaries indexed by departmental course codes.
+            </p>
+            <p class="text-xs font-mono text-muted-light dark:text-muted-dark">
+              Python · Flask · SQLite · HTML/CSS
+            </p>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="space-y-2">
+            <div class="flex items-baseline justify-between gap-4">
+              <h3 class="font-medium text-ink-light dark:text-ink-dark">
+                DevPulse
+              </h3>
+              <div class="flex items-center gap-3 text-xs font-mono">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark underline underline-offset-4">source</a>
+              </div>
+            </div>
+            <p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed">
+              A private practice log to keep track of solved LeetCode problems, categorized by common algorithmic patterns (sliding window, two pointers, trees) alongside space and time complexity notes.
+            </p>
+            <p class="text-xs font-mono text-muted-light dark:text-muted-dark">
+              TypeScript · React · Tailwind CSS
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Technical Knowledge / Skills -->
+      <section class="space-y-4">
+        <h2 class="text-xs uppercase tracking-wider font-mono text-muted-light dark:text-muted-dark border-b border-line-light dark:border-line-dark pb-2">Technical Focus</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          <div>
+            <span class="text-xs font-mono text-muted-light dark:text-muted-dark block mb-1">Languages</span>
+            <p class="text-ink-light dark:text-ink-dark font-mono text-xs leading-relaxed">
+              Python, JavaScript, TypeScript, Java, C++, SQL
+            </p>
+          </div>
+          <div>
+            <span class="text-xs font-mono text-muted-light dark:text-muted-dark block mb-1">Web & Backend</span>
+            <p class="text-ink-light dark:text-ink-dark font-mono text-xs leading-relaxed">
+              Node.js, Express, React, Flask, REST APIs
+            </p>
+          </div>
+          <div>
+            <span class="text-xs font-mono text-muted-light dark:text-muted-dark block mb-1">Databases</span>
+            <p class="text-ink-light dark:text-ink-dark font-mono text-xs leading-relaxed">
+              PostgreSQL, SQLite, MySQL
+            </p>
+          </div>
+          <div>
+            <span class="text-xs font-mono text-muted-light dark:text-muted-dark block mb-1">Fundamentals & Tools</span>
+            <p class="text-ink-light dark:text-ink-dark font-mono text-xs leading-relaxed">
+              Data Structures & Algorithms, Git, Linux / Bash
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="space-y-4">
+        <h2 class="text-xs uppercase tracking-wider font-mono text-muted-light dark:text-muted-dark border-b border-line-light dark:border-line-dark pb-2">Education</h2>
+        
+        <div class="space-y-1">
+          <div class="flex items-baseline justify-between">
+            <h3 class="font-medium text-ink-light dark:text-ink-dark">Veritas University</h3>
+            <span class="text-xs font-mono text-muted-light dark:text-muted-dark">Abuja, Nigeria</span>
+          </div>
+          <p class="text-sm text-muted-light dark:text-muted-dark">
+            B.Sc. in Software Engineering · Currently enrolled
+          </p>
+          <p class="text-xs text-muted-light dark:text-muted-dark font-mono pt-1">
+            Relevant coursework: Data Structures, Object-Oriented Design, Database Systems, Computer Networks.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact / Links Section -->
+      <section class="space-y-4 pt-4 border-t border-line-light dark:border-line-dark">
+        <h2 class="text-xs uppercase tracking-wider font-mono text-muted-light dark:text-muted-dark">Contact</h2>
+        <p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed">
+          I am actively looking for software engineering internships and junior roles. If you would like to work together or discuss an opportunity, please reach out.
+        </p>
+
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-mono pt-2">
+          <li>
+            <a href="mailto:tersoosurma@gmail.com" class="text-ink-light dark:text-ink-dark hover:underline underline-offset-4">
+              tersoosurma@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark hover:underline underline-offset-4">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark hover:underline underline-offset-4">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted-light dark:text-muted-dark hover:text-ink-light dark:hover:text-ink-dark hover:underline underline-offset-4">
+              X (Twitter)
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 pt-8 border-t border-line-light dark:border-line-dark flex items-center justify-between text-xs font-mono text-muted-light dark:text-muted-dark">
+      <span>Surma Tersoo · Veritas University</span>
+      <span>Abuja, Nigeria</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Clean, Duotone Editorial Styles for Surma Tersoo's Portfolio */
+
+html {
+  color-scheme: light dark;
+}
+
+/* Crisp selection styling in strict monochrome */
+::selection {
+  background: #111111;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Subtle, crisp focus outlines for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 1.5px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Clean minimal links */
+a {
+  text-decoration-thickness: 1px;
+}
